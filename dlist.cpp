@@ -7,6 +7,23 @@ struct Node{
 	struct Node *prev;
 };
 
+struct DList{
+	int item;
+	struct DList *next;
+	struct DList *prev;
+	struct DList *head;
+};
+
+class DoubleList{
+	public:
+		static DList* createList(int item){
+			DList *list = new DList();
+			list -> next = NULL;
+			list -> prev = NULL;
+			
+		}
+};
+
 class DList{
 	private:
 		Node *head;
